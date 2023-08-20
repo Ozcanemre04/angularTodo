@@ -1,0 +1,36 @@
+@import "../../../../styles.scss";
+div{
+   width: 300px;
+   background-color: #4D4D80;
+   padding: 10px;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   p{
+    padding-right: 10px;
+    padding-left: 2px;
+    width: 50%;
+    color: $color;
+   }
+   .done{
+    text-decoration: line-through;
+    color: gray;
+   }
+   .input{
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+   }
+   
+   button{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: $backgroundColor;
+    color: $color;
+    border: none;
+    margin-left: 5px;
+   }
+}

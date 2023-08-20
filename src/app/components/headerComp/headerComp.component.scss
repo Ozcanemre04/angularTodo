@@ -1,0 +1,12 @@
+@import "../../../styles.scss";
+header{
+    height: 100px;
+    background-color: #8F90EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 32px;
+        color: $color;
+    }
+}

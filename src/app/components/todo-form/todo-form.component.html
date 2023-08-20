@@ -1,0 +1,13 @@
+<div class="form-container">
+    <form [formGroup]="todoForm" (ngSubmit)="addTodo()">
+        <input type="text" formControlName="title" name="title" required placeholder="write todo" minlength="4" #todoInput>
+        <button [disabled]="todoForm.get('title')?.value?.length < 4">Add</button>
+    </form>
+    <p *ngIf="todoForm.controls['title'].hasError('required')  && todoForm.controls['title'].touched" class="errors">
+        todo is required.
+    </p>
+    <p *ngIf="todoForm.controls['title'].hasError('minlength') &&  todoForm.controls['title'].touched" class="errors">
+        min lenght must be 4 character.
+    </p>
+</div>
+

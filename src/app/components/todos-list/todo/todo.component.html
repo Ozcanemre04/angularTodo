@@ -1,0 +1,8 @@
+<div>
+    <input type="checkbox" name="" value={{todo.done}} (input)="todoDone()">
+    <p *ngIf="!update" [ngClass]="todo.done ? 'done': 'undone' ">{{todo.title}}</p>
+    <button *ngIf="!update" (click)="updateTodo()">edit</button>
+    <input type="text" *ngIf="update" value={{todo.title}} #todoInput  class="input">
+    <button *ngIf="update" (click)="ConfirmUpdatedTodoValue()">change</button>
+    <button (click)="deleteTodo()">delete</button>
+</div>
